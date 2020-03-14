@@ -1,0 +1,3 @@
+
+#!/usr/bin/env bash
+g++ extern/*.cpp src/*.cpp -o tl.exe

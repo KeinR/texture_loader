@@ -1,0 +1,5 @@
+#ifndef bash_IMAGE_LOADED
+#define bash_IMAGE_LOADED
+#include "tl_image.h"
+extern tl_image image_bash;
+#endif
