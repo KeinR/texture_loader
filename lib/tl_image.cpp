@@ -6,6 +6,14 @@
 tl_image::tl_image(int length, unsigned char *raw): rawLength(length), raw(raw) {
 }
 
+~tl_image::tl_image() {
+    if (sizeVal) {
+        stbi_image_free(pixelsVal);
+    } else if (!channelsVal) {
+        delete[] raw;
+    }
+}
+
 void tl_image::free() {
     if (sizeVal) {
         stbi_image_free(pixelsVal);

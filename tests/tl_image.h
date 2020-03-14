@@ -11,6 +11,7 @@ class tl_image {
     unsigned char *pixelsVal;
     public:
     tl_image(int length, unsigned char *raw);
+    ~tl_image();
     void free();
     void load();
     int size();
