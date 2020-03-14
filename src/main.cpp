@@ -57,9 +57,9 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    compiled += "#include \"";
+    compiled += "#include <";
     compiled += name;
-    compiled += HEADER_EXT"\"\n";
+    compiled += HEADER_EXT">\n";
 
     std::ifstream file(argv[1], std::ios::binary);
     file.seekg(0, file.end);

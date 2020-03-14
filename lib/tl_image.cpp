@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "../extern/stb_image.h"
-#include "tl_image.h"
+#include <stb_image.h>
+#include <tl_image.h>
 
 tl_image::tl_image(int length, unsigned char *raw): rawLength(length), raw(raw) {
 }
