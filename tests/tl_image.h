@@ -6,10 +6,13 @@ class tl_image {
     int widthVal;
     int heightVal;
     int channelsVal;
+    int rawLength;
+    unsigned char *raw;
     unsigned char *pixelsVal;
     public:
     tl_image(int length, unsigned char *raw);
     void free();
+    void load();
     int size();
     int width();
     int height();

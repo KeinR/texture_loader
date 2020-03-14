@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
 
     compiled += "tl_image ";
     compiled += varName == nullptr ? "image_" + name : varName;
-    compiled += "= tl_image(";
+    compiled += "=tl_image(";
     compiled += lenS;
     compiled += ',';
 
