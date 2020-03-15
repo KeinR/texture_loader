@@ -5,6 +5,11 @@
 #define HEADER_EXT ".hr"
 #define DATA_EXT ".rc"
 
+/**
+ * Orion "KeinR" Musselman
+ * Version 1.0
+ */
+
 int main(int argc, char *argv[]) {
 
     // Parse command line args
