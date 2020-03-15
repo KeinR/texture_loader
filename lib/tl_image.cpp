@@ -1,12 +1,17 @@
 #include <iostream>
 
-#include <stb_image.h>
+#include <stb/stb_image.h>
 #include <tl_image.h>
+
+/**
+ * Orion "KeinR" Musselman
+ * Version 1.1
+ */
 
 tl_image::tl_image(int length, unsigned char *raw): rawLength(length), raw(raw) {
 }
 
-~tl_image::tl_image() {
+tl_image::~tl_image() {
     if (sizeVal) {
         stbi_image_free(pixelsVal);
     } else if (!channelsVal) {
