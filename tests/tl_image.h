@@ -1,6 +1,11 @@
 #ifndef TEXTURE_IMAGE_H_INCLUDED
 #define TEXTURE_IMAGE_H_INCLUDED
 
+/**
+ * Orion "KeinR" Musselman
+ * Version 1.0
+ */
+
 class tl_image {
     int sizeVal;
     int widthVal;
