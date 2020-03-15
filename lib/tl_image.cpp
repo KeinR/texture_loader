@@ -37,22 +37,22 @@ void tl_image::load() {
     }
 }
 
-int tl_image::size() {
+int tl_image::size() const {
     return sizeVal;
 }
 
-int tl_image::width() {
+int tl_image::width() const {
     return widthVal;
 }
 
-int tl_image::height() {
+int tl_image::height() const {
     return heightVal;
 }
 
-int tl_image::channels() {
+int tl_image::channels() const {
     return channelsVal;
 }
 
-const unsigned char *tl_image::pixels() {
+const unsigned char *tl_image::pixels() const {
     return pixelsVal;
 }

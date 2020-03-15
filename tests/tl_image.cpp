@@ -1,12 +1,17 @@
 #include <iostream>
 
-#include "../extern/stb_image.h"
-#include "tl_image.h"
+#include <stb/stb_image.h>
+#include <tl_image.h>
+
+/**
+ * Orion "KeinR" Musselman
+ * Version 1.1
+ */
 
 tl_image::tl_image(int length, unsigned char *raw): rawLength(length), raw(raw) {
 }
 
-~tl_image::tl_image() {
+tl_image::~tl_image() {
     if (sizeVal) {
         stbi_image_free(pixelsVal);
     } else if (!channelsVal) {
@@ -32,22 +37,22 @@ void tl_image::load() {
     }
 }
 
-int tl_image::size() {
+int tl_image::size() const {
     return sizeVal;
 }
 
-int tl_image::width() {
+int tl_image::width() const {
     return widthVal;
 }
 
-int tl_image::height() {
+int tl_image::height() const {
     return heightVal;
 }
 
-int tl_image::channels() {
+int tl_image::channels() const {
     return channelsVal;
 }
 
-const unsigned char *tl_image::pixels() {
+const unsigned char *tl_image::pixels() const {
     return pixelsVal;
 }

@@ -3,7 +3,7 @@
 
 /**
  * Orion "KeinR" Musselman
- * Version 1.0
+ * Version 1.1
  */
 
 class tl_image {
@@ -19,11 +19,11 @@ class tl_image {
     ~tl_image();
     void free();
     void load();
-    int size();
-    int width();
-    int height();
-    int channels();
-    const unsigned char *pixels();
+    int size() const;
+    int width() const;
+    int height() const;
+    int channels() const;
+    const unsigned char *pixels() const;
 };
 
 #endif
